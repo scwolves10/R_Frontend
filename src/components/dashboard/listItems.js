@@ -9,6 +9,9 @@ import PeopleIcon from '@material-ui/icons/People';
 import BarChartIcon from '@material-ui/icons/BarChart';
 import LayersIcon from '@material-ui/icons/Layers';
 import AssignmentIcon from '@material-ui/icons/Assignment';
+import Dashboard from "./Dashboard";
+import ConnectButton from "./ConnectButton";
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 export const mainListItems = (
   <div>

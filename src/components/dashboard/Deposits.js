@@ -11,6 +11,10 @@ import CryptoTracker from './CryptoTracker';
 import { ChainId, DAppProvider, ChainId, DAppProvider, useEthers, useEtherBalance } from '@usedapp/core'
 import ConnectButton from "./ConnectButton";
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Dashboard from "./Dashboard";
+import Swap from "./Swap";
+import Loan from "./Loan";
+
 
 function preventDefault(event) {
   event.preventDefault();

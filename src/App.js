@@ -25,18 +25,12 @@ const config = {
 const App = () => {
   return (
     <div>
-      <switch>
-
+      
 
       <Dashboard />
       <ConnectButton />
 
-                <Route path="/" component={Dashboard} exact />
-                <Route path="/about" component={Swap} />
-                <Route path="/shop" component={Loan} />
-                <Route component={Error} />
 
-    </switch>
     </div>
   );
 }

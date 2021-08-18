@@ -8,7 +8,8 @@ import { ChainId, DAppProvider, ChainId, DAppProvider, useEthers, useEtherBalanc
 import ReactDOM from "react-dom";
 import { formatEther, formatUnits, useEthers } from '@ethersproject/units';
 import ConnectButton from "./components/dashboard/ConnectButton";
-
+import Swap from "./components/dashboard/Swap";
+import Loan from "./components/dashboard/Loan";
 
 const queryClient = new QueryClient();
 

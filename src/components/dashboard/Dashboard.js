@@ -26,6 +26,10 @@ import { QueryClient, QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
 import CryptoTracker from './CryptoTracker';
 import cryptoNames from './Deposits';
+import ConnectButton from "./ConnectButton";
+import Dashboard from "./Dashboard";
+import ConnectButton from "./ConnectButton";
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 function Copyright() {
   return (
