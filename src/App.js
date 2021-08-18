@@ -7,7 +7,7 @@ import Dashboard from "./components/dashboard/Dashboard";
 import { ChainId, DAppProvider, ChainId, DAppProvider, useEthers, useEtherBalance } from '@usedapp/core'
 import ReactDOM from "react-dom";
 import { formatEther, formatUnits, useEthers } from '@ethersproject/units';
-import ConnectButton from "./ConnectButton";
+import ConnectButton from "./components/dashboard/ConnectButton";
 
 const queryClient = new QueryClient();
 

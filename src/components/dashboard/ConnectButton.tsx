@@ -2,7 +2,7 @@
 import { Button, Box, Text } from "@chakra-ui/react";
 import { useEthers, useEtherBalance } from "@usedapp/core";
 
-export default function ConnectButton() {
+function ConnectButton() {
   const {activateBrowserWallet, account } = useEthers();
   const etherBalance = useEtherBalance(account);
 
@@ -15,4 +15,5 @@ export default function ConnectButton() {
   ) : (
     <Button>Connect to a wallet</Button>
   );
-}
+  }
+  export default ConnectButton;
