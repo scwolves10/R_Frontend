@@ -81,7 +81,7 @@
     "react-native-web": "0.17.1",
     "react-query": "3.19.6",
     "react-router": "5.2.0",
-    "react-router-dom": "5.2.0",
+    "react-router-dom": "^5.2.0",
     "react-script-tag": "1.1.2",
     "react-scripts": "4.0.3",
     "react-window": "1.8.6",

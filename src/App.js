@@ -8,6 +8,10 @@ import { ChainId, DAppProvider, ChainId, DAppProvider, useEthers, useEtherBalanc
 import ReactDOM from "react-dom";
 import { formatEther, formatUnits, useEthers } from '@ethersproject/units';
 import ConnectButton from "./components/dashboard/ConnectButton";
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Swap from "./components/dashboard/Swap";
+import Loan from "./components/dashboard/Loan";
+
 
 const queryClient = new QueryClient();
 
@@ -21,10 +25,18 @@ const config = {
 const App = () => {
   return (
     <div>
-      
+      <switch>
+
+
       <Dashboard />
       <ConnectButton />
 
+                <Route path="/" component={Dashboard} exact />
+                <Route path="/about" component={Swap} />
+                <Route path="/shop" component={Loan} />
+                <Route component={Error} />
+
+    </switch>
     </div>
   );
 }
