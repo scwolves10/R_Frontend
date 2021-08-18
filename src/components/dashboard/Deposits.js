@@ -9,7 +9,7 @@ import Typography from '@material-ui/core/Typography';
 import Title from './Title';
 import CryptoTracker from './CryptoTracker';
 import { ChainId, DAppProvider, ChainId, DAppProvider, useEthers, useEtherBalance } from '@usedapp/core'
-import ConnectButton from "./components/ConnectButton";
+import ConnectButton from "./ConnectButton";
 
 function preventDefault(event) {
   event.preventDefault();
