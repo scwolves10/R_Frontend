@@ -27,7 +27,6 @@ const App = () => {
       
 
       <Dashboard />
-      <ConnectButton />
 
 
     </div>
