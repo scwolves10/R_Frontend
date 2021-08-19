@@ -14,6 +14,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Dashboard from "./Dashboard";
 import Swap from "./Swap";
 import Loan from "./Loan";
+import Navbar from "./Link";
 
 
 function preventDefault(event) {
@@ -28,6 +29,7 @@ const useStyles = makeStyles({
 
 export const cryptoNames = (
   <div>
+    <switch>
     <ListItem>
       
       <ConnectButton />
@@ -35,7 +37,7 @@ export const cryptoNames = (
 
     <ListItem button>
       
-      
+    <Route path="/swap" component={Swap} />
       
     </ListItem>
     <ListItem button>
@@ -50,6 +52,7 @@ export const cryptoNames = (
       
       <ListItemText primary="Dogecoin" />
     </ListItem>
+    </switch>
   </div>
 );
 export default cryptoNames;

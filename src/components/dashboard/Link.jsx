@@ -8,19 +8,18 @@ import { ChainId, DAppProvider, ChainId, DAppProvider, useEthers, useEtherBalanc
 import ReactDOM from "react-dom";
 import { formatEther, formatUnits, useEthers } from '@ethersproject/units';
 import ConnectButton from "./components/dashboard/ConnectButton";
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Swap from "./components/dashboard/Swap";
 import Loan from "./components/dashboard/Loan";
-import Navbar from "./Link";
-
-const queryClient = new QueryClient();
 
 
-const App = () => {
+
+function Navbar() {
   return (
     <div>
-      <Dashboard />
-
-
+      <Link to="/">Dashboard </Link>
+      <Link to="/swap">Swap </Link>
+      <Link to="/loan">Loan</Link>
     </div>
   );
-}
-export default App;
+};

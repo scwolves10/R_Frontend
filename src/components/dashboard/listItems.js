@@ -11,10 +11,15 @@ import LayersIcon from '@material-ui/icons/Layers';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 import Dashboard from "./Dashboard";
 import ConnectButton from "./ConnectButton";
+import Swap from "./components/dashboard/Swap";
+import Loan from "./components/dashboard/Loan";
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Navbar from './Link';
+
 
 export const mainListItems = (
   <div>
+    <switch>
     <ListItem button>
       <ListItemIcon>
         <DashboardIcon />
@@ -25,13 +30,14 @@ export const mainListItems = (
       <ListItemIcon>
         <ShoppingCartIcon />
       </ListItemIcon>
-      <ListItemText primary="Swap" />
+       <Link to="/about">Swap </Link>
     </ListItem>
     <ListItem button>
       <ListItemIcon>
         <PeopleIcon />
       </ListItemIcon>
       <ListItemText primary="Pool" />
+      <Route path="/Loam" component={Loan} />
     </ListItem>
     <ListItem button>
       <ListItemIcon>
@@ -57,6 +63,7 @@ export const mainListItems = (
       </ListItemIcon>
       <ListItemText primary="Farm" />
     </ListItem>
+    </switch>
   </div>
 );
 
