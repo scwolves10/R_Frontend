@@ -11,8 +11,8 @@ import LayersIcon from '@material-ui/icons/Layers';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 import Dashboard from "./Dashboard";
 import ConnectButton from "./ConnectButton";
-import Swap from "./components/dashboard/Swap";
-import Loan from "./components/dashboard/Loan";
+import Swap from "./Swap";
+import Loan from "./Loan";
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Navbar from './Link';
 
