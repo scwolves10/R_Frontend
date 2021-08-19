@@ -2,7 +2,7 @@ import React from "react";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
 import CryptoTracker from "./CryptoTracker";
-import "./components/style.css";
+import "./style.css";
 import Dashboard from "./Dashboard";
 import { ChainId, DAppProvider, ChainId, DAppProvider, useEthers, useEtherBalance } from '@usedapp/core'
 import ReactDOM from "react-dom";
